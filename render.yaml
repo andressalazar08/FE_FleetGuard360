@@ -32,6 +32,8 @@ services:
           property: database
       - key: SPRING_DATASOURCE_URL
         value: jdbc:postgresql://${SPRING_DATASOURCE_HOST}:${SPRING_DATASOURCE_PORT}/${SPRING_DATASOURCE_SCHEMA}
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
 
 databases:
   - name: elephant
